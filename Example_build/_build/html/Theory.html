@@ -1,0 +1,628 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Theory &#8212; Review</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Methods" href="Methods.html" />
+    <link rel="prev" title="Introduction" href="intro.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/KSU_logo.jpg" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Review</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="intro.html">
+                    Introduction
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Theory
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Methods.html">
+   Methods
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Discussion.html">
+   Discussion/Conclusion
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="markdown.html">
+   Citations
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FTheory.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Theory.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mechanisms-of-research-group-s-sodium-borate-glass">
+   Mechanisms of Research Group’s Sodium Borate Glass
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cerium-oxidation-condensed-matter-lens">
+   Cerium Oxidation: Condensed Matter Lens
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#concept-of-xanes">
+     Concept of XANES
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#working-with-mass-absorption-coefficient">
+     Working With Mass Absorption Coefficient
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#powdered-spreads">
+     Powdered Spreads
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#xanes-for-cnps">
+     XANES for CNPs
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#linear-combination-fitting">
+   Linear Combination Fitting
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deglitching">
+   Deglitching
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#flatten-normalize-data">
+   Flatten/Normalize Data
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Theory</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#mechanisms-of-research-group-s-sodium-borate-glass">
+   Mechanisms of Research Group’s Sodium Borate Glass
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#cerium-oxidation-condensed-matter-lens">
+   Cerium Oxidation: Condensed Matter Lens
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#concept-of-xanes">
+     Concept of XANES
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#working-with-mass-absorption-coefficient">
+     Working With Mass Absorption Coefficient
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#powdered-spreads">
+     Powdered Spreads
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#xanes-for-cnps">
+     XANES for CNPs
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#linear-combination-fitting">
+   Linear Combination Fitting
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deglitching">
+   Deglitching
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#flatten-normalize-data">
+   Flatten/Normalize Data
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section class="tex2jax_ignore mathjax_ignore" id="theory">
+<h1>Theory<a class="headerlink" href="#theory" title="Permalink to this headline">#</a></h1>
+<section id="mechanisms-of-research-group-s-sodium-borate-glass">
+<h2>Mechanisms of Research Group’s Sodium Borate Glass<a class="headerlink" href="#mechanisms-of-research-group-s-sodium-borate-glass" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>The parent glass is made with a composition of $Na_2O_2B_2O_3# and doped with varying amounts of Cerium Oxide - 0.01 to 0.05 mol%. Other glasses are composed of borax, then held at 1110,1200, and 1300 celcius for 1,2 or 3 hours. They make up most of the collected data containing 0.05 mol% of cerium-oxide.</p></li>
+<li><p>Thermal analysis for the parent and borate glass was done by looking at the specific heat capacity of the samples. They are heated to 900 c at a rate of 20 c per minute. As the heat flows into the sample, this is done so against the temperature. By doing this, glass transitions are observed for the samples. It is observed then that the crystallization temperatures increase for samples doped with higher cerium oxide. The Hruby parameter increases as the amounts of Cerium oxide increase, suggesting that an elevated amount of Cerium-Oxidemakes the glass durable agaisnt crystallization. The group’s FTIR spectroscopy analysis has confirmed modifications of the glass network <span id="id1">[<a class="reference internal" href="markdown.html#id3" title="Kisa S. Ranasinghe, Rajnish Singh, Denis Leshchev, Angel Vasquez, Eli Stavitski, and Ian Foster. Synthesis of nanoceria with varied ratios of ce3+/ce4+ utilizing soluble borate glass. Nanomaterials, 2022. URL: https://www.mdpi.com/2079-4991/12/14/2363, doi:10.3390/nano12142363.">Ranasinghe <em>et al.</em>, 2022</a>]</span>. So as we modify the glass network with more elevated Cerium Oxide amounts, producing greater oxidization to reduced ‘status’, we are changing the glass network itself. It seems to me the more we ‘ALLOW’ for oxidization to occur, then, of course, we will have an elevated Ce3+ concentration. NEEDS REVISING, doesnt sound right</p></li>
+</ul>
+</section>
+<section id="cerium-oxidation-condensed-matter-lens">
+<h2>Cerium Oxidation: Condensed Matter Lens<a class="headerlink" href="#cerium-oxidation-condensed-matter-lens" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>We may attribute the potentials to an atom’s number of protons and electrons. We can imagine around this particular atom; it has a complex approximation of a “finite well” with an electron finding itself in a bound state. Now, what about structures, not only  atoms by themselve, but atoms arranged and bonded in a particular way? Different structures, made up of the same compositions, will have different potential energies, which means our bound states will differ from other species of the same composition. This idea closely models differnet oxidization states within a sample, as a result of different oxidization states, XAFS spectrums will vary from one another.</p></li>
+</ul>
+<section id="concept-of-xanes">
+<h3>Concept of XANES<a class="headerlink" href="#concept-of-xanes" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>We can think of XANES in terms of Beer Lambert’s Law, where the x-ray’s Absorption is proportional to the distance that the x-rays have to travel through and the concentration of the sample.</p></li>
+<li><p>If we now designate the number of photons absorbed in a given material, is equivalent to the intensity before entering and the thickness of an infintismal value, we arrive at the following relation for slight decreases in light intensity.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+dI = a I dx
+\]</div>
+<ul class="simple">
+<li><p>Which when integrated becomes…</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+ ln(I) = ax + c
+\]</div>
+<ul class="simple">
+<li><p>Now, we have mentioned slight changes in lights intensity for infintisimal lenghts of a material, but what about absorbance? We know it has to be porportional to the concentration of the material, giving this relation…</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+    \frac{-dI}{dx} \alpha c
+\]</div>
+<ul class="simple">
+<li><p>Combining the two laws, we say then absorbance is equivalent to the path of the photons, their energy, and concentration of the sample.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+    \frac{-dI}{dx} = b c I
+\]</div>
+<div class="math notranslate nohighlight">
+\[
+    I = I_0 \exp{-bcx}
+\]</div>
+<ul class="simple">
+<li><p>The absorbtion coefficent then becomes b times c, meaning the absorbtion coefficent is dependant on the concentration and some constant of porportionality dependant on the material. But as we vary the energy of the photons while keeping the concentration constant, the absoprtion will change as the energy increases, making it a function of energy.</p></li>
+</ul>
+</section>
+<section id="working-with-mass-absorption-coefficient">
+<h3>Working With Mass Absorption Coefficient<a class="headerlink" href="#working-with-mass-absorption-coefficient" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>Basically we determined above that the packing density of the sample will affect the amount of atoms in a given thickness. As a result it is easier to work with the mass absorption coefficient.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+    U_m(E) = \frac{U(E)}{\rho}
+\]</div>
+<ul class="simple">
+<li><p>But some working samples do not have known Mass Absorption values, so its up to the person to decide whats best and try to replicate every experiment as perfectly as possible. Yet again, there is a way around this by converting powdered substances thickness into mass Measurements.</p></li>
+</ul>
+</section>
+<section id="powdered-spreads">
+<h3>Powdered Spreads<a class="headerlink" href="#powdered-spreads" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>We measure the area over which the layer of powder is spread and convert the thickness into a mass.</p></li>
+</ul>
+<div class="math notranslate nohighlight">
+\[
+    U_m(E)\rho x = U_m \frac{m}{V} x = U_m \frac{m}{Ax} x = \frac{U_m m}{A}
+\]</div>
+<ul class="simple">
+<li><p>This works great for us! As we do not need to know the density of our material.</p></li>
+<li><p>And because we may work with samples with varying compositions as a result of slight changes in each of their creations, this is a better way to help us because mass and area are very easy to obtain <span id="id2">[<a class="reference internal" href="markdown.html#id8" title="Scott Calvin. XAFS for Everyone. CRC Press, 2013. ISBN 978-0-42919-387-3. URL: https://doi.org/10.1201/b14843, doi:10.1201/b14843.">Calvin, 2013</a>]</span>.</p></li>
+</ul>
+</section>
+<section id="xanes-for-cnps">
+<h3>XANES for CNPs<a class="headerlink" href="#xanes-for-cnps" title="Permalink to this headline">#</a></h3>
+<ul class="simple">
+<li><p>X-ray absorption near edge structure spectrooscopy (XANES) is used to observe oxidization states of cerium ions in CNP. In a XANES spectra for CNP there are four observed peaks of varying amplitudes depending on the ratios of the oxidized states <span class="math notranslate nohighlight">\(Ce^{3+}/Ce^{4+}\)</span> in the L-3 edge ~ Ref fig <a class="reference internal" href="#markdown-peaks"><span class="std std-numref">Fig. 1</span></a>. Both A and B  correlate to the <span class="math notranslate nohighlight">\(Ce^{4+}\)</span> peak while C correlates to the <span class="math notranslate nohighlight">\(Ce^{3+}\)</span> peak <span id="id3">[<a class="reference internal" href="markdown.html#id7" title="Feng Zhang, Peng Wang, J Koberstein, S Khalid, and Siu-Wai Chan. Cerium oxidation state in ceria nanoparticles studied with x-ray photoelectron spectroscopy and absorption near edge spectroscopy. Surface Science, 563(1):74-82, 2004. URL: https://www.sciencedirect.com/science/article/pii/S003960280400812X, doi:https://doi.org/10.1016/j.susc.2004.05.138.">Zhang <em>et al.</em>, 2004</a>]</span>. As the <span class="math notranslate nohighlight">\(Ce^{3+}\)</span> concentration goes up, peak C will also increase until its a pure sample. Anything between that of a pure <span class="math notranslate nohighlight">\(Ce^{4+}\)</span> and <span class="math notranslate nohighlight">\(Ce^{3+}\)</span> sample will take on peaks of different hights. But there are constraints to which peaks will increase and decrease for varying concentrations, ~ Ref fig <a class="reference internal" href="#markdown-spectra"><span class="std std-numref">Fig. 2</span></a>. In this figure we observe that for pure <span class="math notranslate nohighlight">\(Ce^{3+}\)</span> peak C is at its max while peak B has vanished almost entirly. This is because peak B is a forbidden state in <span class="math notranslate nohighlight">\(Ce_2O_3\)</span>.</p></li>
+</ul>
+<figure class="align-default" id="markdown-peaks">
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/Peaks.png"><img alt="XANES Peaks" class="bg-primary mb-1" src="_images/Peaks.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text"><span id="id4">[<a class="reference internal" href="markdown.html#id7" title="Feng Zhang, Peng Wang, J Koberstein, S Khalid, and Siu-Wai Chan. Cerium oxidation state in ceria nanoparticles studied with x-ray photoelectron spectroscopy and absorption near edge spectroscopy. Surface Science, 563(1):74-82, 2004. URL: https://www.sciencedirect.com/science/article/pii/S003960280400812X, doi:https://doi.org/10.1016/j.susc.2004.05.138.">Zhang <em>et al.</em>, 2004</a>]</span></span><a class="headerlink" href="#markdown-peaks" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<figure class="align-default" id="markdown-spectra">
+<a class="bg-primary mb-1 reference internal image-reference" href="_images/XANES.png"><img alt="XANES Spectrum" class="bg-primary mb-1" src="_images/XANES.png" style="width: 300px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">This is a caption in <strong>Markdown</strong>!</span><a class="headerlink" href="#markdown-spectra" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+<p>Dipping back into the condensed matter lens, we look at the overall net superposition of all species, but in XANES, the individiual species can not be seperated, we just observe the overlap of these specie’s spectra being produced by different combinations of oxidation and reduction.</p>
+</section>
+</section>
+<section id="linear-combination-fitting">
+<h2>Linear Combination Fitting<a class="headerlink" href="#linear-combination-fitting" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>There is still the problem of determining the ratios for CNP samples. In order to determine the ratio of the two oxidized states, analysis must be performed using reference samples to the measured data. The spectrum samples that are being compared to the data are also known as a standard. Thus, the idea of Linear Combination Fitting can simply be put as the following - Its the idea that an unknown spectra can be explained by a combination of standards to best match the composition of the unkown spectra. LCF can be used then to find the relative amounts of the known standards in the CNP samples <span id="id5">[<a class="reference internal" href="markdown.html#id8" title="Scott Calvin. XAFS for Everyone. CRC Press, 2013. ISBN 978-0-42919-387-3. URL: https://doi.org/10.1201/b14843, doi:10.1201/b14843.">Calvin, 2013</a>]</span>.</p></li>
+</ul>
+</section>
+<section id="deglitching">
+<h2>Deglitching<a class="headerlink" href="#deglitching" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>We define glitches as sharp deviations in the measured absorption. Small glitches can be removed by fourier filtering.</p></li>
+<li><p>Very large glitches can affect our normalization and background subtraction. Thus large gltiches should be taken care of for the sake of reliable data.</p></li>
+<li><p>Methods include removing that point or better yet, interpolating that data,</p></li>
+<li><p>This however only works if we oversamples our data in the energy space.</p></li>
+</ul>
+</section>
+<section id="flatten-normalize-data">
+<h2>Flatten/Normalize Data<a class="headerlink" href="#flatten-normalize-data" title="Permalink to this headline">#</a></h2>
+<ul class="simple">
+<li><p>Analysis depends heavily on comparing our spectra of samples. Some of which are ‘dissimilar in fine structure’. More will be mentioned on this later.</p></li>
+</ul>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="intro.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Introduction</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="Methods.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Methods</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By Kieran D. MacDonald<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
